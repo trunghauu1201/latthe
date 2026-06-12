@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 95%;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+.setup-area {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+#createBoardBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#createBoardBtn:hover {
+    background-color: #45a049;
+}
+
+#resetBoardBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#resetBoardBtn:hover {
+    background-color: #d32f2f;
+}
+
+.board-grid {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.cell {
+    background-color: #e6f3ff;
+    border: 2px solid #bce0ff;
+    border-radius: 12px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    transition: background-color 0.2s, border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.cell:hover {
+    background-color: #cce7ff;
+}
+
+.cell img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.cell.blank {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    cursor: default;
+}
+
+.cell.blank:hover {
+    background-color: transparent !important;
+}
+
+.cell.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#iconPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-hidden {
+    display: none !important;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.icon-choices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.icon-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.icon-choice:hover {
+    background-color: #f7f9fa;
+    border-color: #3b82f6;
+}
+
+/* Ảnh trong popup to hơn do đã bỏ chữ */
+.icon-choice img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+#closePopupBtn {
+    background-color: #ef4444;
+    color: white;
+    margin-top: 5px;
+}
+
+#closePopupBtn:hover {
+    background-color: #dc2626;
+}

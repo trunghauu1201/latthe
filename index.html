@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Ghi Nhớ Play Together - Update 2.28</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bảng Nhớ Vị Trí Thẻ</h1>
+        
+        <div class="setup-area">
+            <input type="number" id="rowsInput" placeholder="Hàng" min="1" step="1" value="4">
+            <span>x</span>
+            <input type="number" id="colsInput" placeholder="Cột" min="1" step="1" value="4">
+            <button id="createBoardBtn">Tạo Bàn Cờ Mới</button>
+            <button id="resetBoardBtn" class="danger">Làm Mới Bảng</button>
+        </div>
+
+        <div id="board" class="board-grid">
+            <!-- Ô bàn cờ sẽ được JavaScript sinh ra ở đây -->
+        </div>
+    </div>
+
+    <!-- Popup chọn Icon (Đã bỏ chữ) -->
+    <div id="iconPopup" class="popup-hidden">
+        <div class="popup-content">
+            <div class="icon-choices-grid">
+                <button class="icon-choice" data-icon="sun">
+                    <img src="image/troi.png" alt="sun">
+                </button>
+                <button class="icon-choice" data-icon="moon">
+                    <img src="image/trang.png" alt="moon">
+                </button>
+                <button class="icon-choice" data-icon="cloud">
+                    <img src="image/may.png" alt="cloud">
+                </button>
+                <button class="icon-choice" data-icon="wind">
+                    <img src="image/gio.png" alt="wind">
+                </button>
+                <button class="icon-choice" data-icon="thunder">
+                    <img src="image/dien.png" alt="thunder">
+                </button>
+                <button class="icon-choice" data-icon="ice">
+                    <img src="image/bang.png" alt="ice">
+                </button>
+            </div>
+            <button id="closePopupBtn">Đóng</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
