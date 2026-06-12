@@ -139,7 +139,7 @@ button {
     background-color: #fff;
     padding: 25px;
     border-radius: 15px;
-    width: 300px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -168,7 +168,6 @@ button {
     border-color: #3b82f6;
 }
 
-/* Ảnh trong popup to hơn do đã bỏ chữ */
 .icon-choice img {
     width: 55px;
     height: 55px;

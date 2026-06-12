@@ -1,11 +1,14 @@
-// 1. Cập nhật đường dẫn ảnh (trong thư mục 'image' và định dạng '.png')
+// 1. Cập nhật đường dẫn cho cả 9 ảnh
 const weatherIcons = {
     'sun': 'image/troi.png',
     'moon': 'image/trang.png',
     'cloud': 'image/may.png',
     'wind': 'image/gio.png',
     'thunder': 'image/dien.png',
-    'ice': 'image/bang.png'
+    'ice': 'image/bang.png',
+    'glass': 'image/kinhlup.png',
+    'girl': 'image/cogai.png',
+    'coin': 'image/xu.png'
 };
 
 const rowsInput = document.getElementById('rowsInput');
